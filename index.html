@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>crud</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1 class="text-center mb-5 mt-5 m-auto ">Bookmarker</h1>
+      <div class="phargraph text-center d-flex w-25 m-auto ps-5 mb-3">
+        <i class="fa-solid fa-bookmark text-center"></i>
+        <p class="text-center">Bookmark your favorite sites</p>
+        <i class="fa-solid fa-bookmark text-center"></i>
+      </div>
+    </div>
+
+    <div class="container m-auto p-3 mt-3">
+      <div class="input1 m-auto w-75 mb-3">
+        <label class="m-2" for=""><i class="fa-solid fa-book-bookmark me-2"></i>site name</label
+        >
+        <input
+          type="text"
+          id="siteName"
+          class="form-control"
+          placeholder="Bookmark Name"
+        />
+      </div>
+      <div class="input2 m-auto w-75 mb-5">
+        <label class="m-2" for=""
+          ><i class="fa-solid fa-link me-2"></i>url</label
+        >
+        <input
+          type="text"
+          id="siteUrl"
+          class="form-control my-2"
+          placeholder="Website URL"
+        />
+      </div>
+      <div class="btn1 text-center mb-2">
+        <button onclick="addProuduct()" class="submitbtn btn btn-danger">
+          submit
+        </button>
+      </div>
+    </div>
+    <div class="container">
+      <div class="w-75 bg-white text-center m-auto pt-1">
+        <div class="row">
+          <div class="col-md-3">
+            <p>Index</p>
+          </div>
+          <div class="col-md-3">
+            <p>Website</p>
+          </div>
+          <div class="col-md-3">
+            <p>Visit</p>
+          </div>
+          <div class="col-md-3">
+            <p>Delete</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="w-75 bg-white text-center m-auto mt-3 pt-1">
+        <div class="row" id="add"></div>
+      </div>
+    </div>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

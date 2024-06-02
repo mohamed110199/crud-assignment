@@ -1,0 +1,51 @@
+body {
+  background-color: #F7ECDE;
+
+  height: 100vh;
+}
+h1 {
+  position: relative;
+  width: fit-content;
+}
+h1::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 70%;
+  background-color: #FEC260;
+  transition:  top 0.5s ease-in-out;;
+  z-index: -1;
+}
+h1:hover:after {
+  top: 40%;
+}
+.container .submitbtn {
+  padding: 0.5rem 5rem;
+  background-color: #D1512D;
+} 
+.header::after {
+  content: "";
+  display: block;
+  width: 60%; 
+  height: 1px;
+  border-bottom: 2px dotted black; 
+  margin: auto;
+}
+.btn1::after {
+  content: "";
+  display: block;
+  width: 75%; 
+  height: 1px;
+  border-bottom: 2px dotted black; 
+  margin: auto;
+  margin-top: 2rem;
+}
+.phargraph {
+  margin-top: 2rem;
+  color: transparent;
+  background-image: linear-gradient(to right, green , yellow);
+  background-clip: text;
+  -webkit-background-clip:text ;
+}
